@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Country Page</title>
+        <meta name="author" content="Akuegbo I. Ejeagba">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -Country Page- Akuegbo Iheanyi Ejeagba">
+        <link rel="stylesheet" href="styles/place.css">
+        <script src="scripts/place.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Nanum+Gothic+Coding&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header><h1>Nigeria</h1></header>
+
+        <main>
+            <section class="hero">
+                <picture>
+                    <!-- WebP image format for the smaller hero image -->
+                    <source srcset="images/smaller-image.jpg" media="(max-width: 600px)">
+                    <!-- Fallback for browsers that do not support the picture element -->
+                    <img src="images/larger_image.webp" alt="Hero Image">
+                </picture>
+            </section>
+
+            <section class="data">
+                <h2>Data</h2>
+                <p>Area: 923,768 square kilometers</p>
+                <p>Population: 206 million</p>
+                <p>Capital: Abuja</p>
+                <p>Languages: English (official), Hausa, Yoruba, Igbo, and others</p>
+                <p>Currency: Nigerian Naira (NGN)</p>
+                <p>Time Zone: West Africa Time (UTC+1)</p>
+                <p>Calling Code: +234</p>
+                <p>Internet TLD: .ng</p>
+            </section>
+
+            <section class="weather">
+                <div class="weather-info">
+                    <h2>Weather</h2>
+                    <!-- Emoticon for the weather icon in the wider view -->
+                    <span class="weather-icon-wide"> ☀️</span>
+                    <img class="weather-icon-mobile" src="images/sunny_icon.svg" alt="Weather Icon">
+                </div>
+                <p id="temperature">Temperature: 30°C</p>
+                <p id="conditions">Conditions: Sunny</p>
+                <p id="wind">Wind: 10 km/h</p>
+                <p id="wind-chill">Wind Chill: <span id="wind-chill-value"></span></p>
+            </section>
+
+            <footer>
+                <p>
+                    &copy; <span id="currentyear"></span> 🌺 Akuegbo I. Ejeagba 🌺 Nigeria
+                </p>
+                <p id="lastModified"></p>
+            </footer>
+        </main>
+    </body>
+</html>
