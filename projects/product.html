@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevenKay Poultry Farm Homepage</title>
+    <meta name="author" content="Akuegbo I. Ejeagba">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -ElevenKay Poultry Farm Homepage- Akuegbo Iheanyi Ejeagba">
+    <link rel="favicon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/product.css">
+    <script src="scripts/product.js" defer></script>
+</head>
+<body>
+    <header>
+        <section id="header">
+            <a href="#"><img src="images/farm_logo.png" class="Logo" alt=""></a>
+            <h1>ElevenKay Farm Resources</h1>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main>
+        <h1>Our Farm Products</h1>
+
+        <div class="product-grid">
+            <div class="product" data-name="Product 1" data-description="Fresh Farm Eggs" data-price="$3.00 / dozen" data-image="images/eggs2.jpg">
+                <img src="images/eggs2.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>Fresh farm eggs</p>
+                <p class="price">$3.00 / dozen</p>
+            </div>
+            <div class="product" data-name="Product 2" data-description="Whole Chicken" data-price="$12.00 for each" data-image="images/whole-chicken.JPG">
+                <img src="images/whole-chicken.JPG" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>Whole Chicken</p>
+                <p class="price">$12.00 for each</p>
+            </div>
+            <div class="product" data-name="Product 3" data-description="Chicken Breast" data-price="$8.00 / lb" data-image="images/Chicken-Breast.jpg">
+                <img src="images/Chicken-Breast.jpg" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>Chicken Breast</p>
+                <p class="price">$8.00 / lb</p>
+            </div>
+            <div class="product" data-name="Product 4" data-description="Chicken thighs" data-price="$7.00 / lb" data-image="images/chicken-tighs.jpeg">
+                <img src="images/chicken-tighs.jpeg" alt="Product 4">
+                <h2>Product 4</h2>
+                <p>Chicken Thighs</p>
+                <p class="price">$7.00 / dozen</p>
+            </div>
+            <div class="product" data-name="Product 5" data-description="Chicken wings" data-price="$6.00 / lb" data-image="images/Chicken-wings.jpg">
+                <img src="images/Chicken-wings.jpg" alt="Product 5">
+                <h2>Product 5</h2>
+                <p>Chicken wings</p>
+                <p class="price">$6.00 / lb</p>
+            </div>
+            <div class="product" data-name="Product 6" data-description="Chicken drumsticks" data-price="$7.00 / lb" data-image="images/chicken-drumstick.jpg">
+                <img src="images/chicken-drumstick.jpg" alt="Product 6">
+                <h2>Product 6</h2>
+                <p>Chicken drumsticks</p>
+                <p class="price">$7.00 / lb</p>
+            </div>
+            <div class="product" data-name="Product 7" data-description="Turkey breast" data-price="$10.00 / lb" data-image="images/turkey-breast.jpg">
+                <img src="images/turkey-breast.jpg" alt="Product 7">
+                <h2>Product 7</h2>
+                <p>Turkey breast</p>
+                <p class="price">$10.00 / lb</p>
+            </div>
+            <div class="product" data-name="Product 8" data-description="Whole turkey" data-price="$25.00 each" data-image="images/raw-turkey.jpg">
+                <img src="images/raw-turkey.jpg" alt="Product 8">
+                <h2>Product 8</h2>
+                <p>Whole turkey</p>
+                <p class="price">$25.00 each</p>
+            </div>
+            <div class="product" data-name="Product 9" data-description="Duck breast" data-price="$12.00 / lb" data-image="images/duck-breast.jpg">
+                <img src="images/duck-breast.jpg" alt="Product 9">
+                <h2>Product 9</h2>
+                <p>Duck breast</p>
+                <p class="price">$12.00 / lb</p>
+            </div>
+            <div class="product" data-name="Product 10" data-description="Quail eggs" data-price="$5.00 / dozen" data-image="images/quail-eggs.jpg">
+                <img src="images/quail-eggs.jpg" alt="Product 10">
+                <h2>Product 10</h2>
+                <p>Quail eggs</p>
+                <p class="price">$5.00 / dozen</p>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="productModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modalImage" src="" alt="Product Image">
+                <h2 id="modalName"></h2>
+                <p id="modalDescription"></p>
+                <p id="modalPrice" class="price"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h4>Contact Information</h4>
+                <p>Address: 21 Olayinka Balogun Street, Bucknor, Ejigbo, Lagos State, Nigeria</p>
+                <p>Phone: 090 2294 3052</p>
+                <p>Email: ejeagbaakuegbo@gmail.com</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="footer-section social-media">
+                <h4>Follow Us</h4>
+                <a href="http://facebook.com">Facebook</a>
+                <a href="http://instagram.com">Instagram</a>
+                <a href="http://twitter.com">Twitter</a>
+                <a href="http://linkedin.com">LinkedIn</a>
+              </div>
+              <div class="footer-section newsletter">
+                <h4>Newsletter Signup</h4>
+                <p>Stay updated with our latest news and offers.</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+              </div>
+              <div class="footer-section business-hours">
+                <h4>Business Hours</h4>
+                <p>Weekdays: 8:00 AM - 6:00 PM</p>
+                <p>Weekends: 9:00 AM - 4:00 PM</p>
+              </div>
+        </div>
+    </footer>
+</body>
+</html>
